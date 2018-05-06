@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [continous testing]">
+  <parameter name="browserName" value="firefox"/>
+  <test name="chromeTests(failed)">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="tests.DriverFactory">
+        <methods>
+          <include name="driverInitialization"/>
+        </methods>
+      </class> <!-- tests.DriverFactory -->
+      <class name="tests.GoogleTest">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- tests.GoogleTest -->
+    </classes>
+  </test> <!-- chromeTests(failed) -->
+</suite> <!-- Failed suite [continous testing] -->
